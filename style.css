@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Lily+Script+One|Oleo+Script:700|Simonetta:900');
+
+body {
+	background: #E74C3C;
+}
+
+h1 {
+	font-family: 'Lily Script One', cursive;
+	color: #fafafa;
+	font-size: 40px;
+}
+
+#wrapper {
+	position: absolute;
+	width: 350px;
+	left: 35%;
+	top: 35%;
+}
+
+img {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 10000;
+	transition: ease-in-out 0.5s;
+}
+
+.overlay {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: ease-in-out 0.5s;
+	border-radius: 100px;
+	width: 320px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	padding-top: 20px;
+	bottom: 0;
+	opacity: 0;
+	background: #FFFFFF;
+	z-index: -10000;
+}
+
+.overlay span {
+	position: relative;
+	left: 90px;
+	font-family: 'Oleo Script', cursive;
+	font-size: 25px;
+	color: #212121;
+}
+
+.overlay p {
+	color: #212121;
+	position: relative;
+	font-family: 'Simonetta', cursive;
+	left: 50px;
+}
+
+.user {
+	margin-top: 20px;
+}
+.user:hover {
+		cursor: pointer;
+}
+.user:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.user:hover img{
+	left: 220px;
+}
